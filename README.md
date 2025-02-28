@@ -38,3 +38,4 @@ from transformers import TFAutoModelForSequenceClassification, AutoTokenizer
 
 bert_model = TFAutoModelForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=6)
 tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+
