@@ -25,3 +25,16 @@ We used the **Hugging Face Emotion Dataset**, which contains **16,000+ training 
 ---
 
 ## ⚙️ Project Structure
+
+---
+
+## 🚀 Model Architectures
+
+### 🔹 **1. Transformer-Based Model (BERT)**
+BERT uses deep bidirectional transformers to capture contextual meaning.
+
+```python
+from transformers import TFAutoModelForSequenceClassification, AutoTokenizer
+
+bert_model = TFAutoModelForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=6)
+tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
